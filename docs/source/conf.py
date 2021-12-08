@@ -23,7 +23,7 @@ project = 'stancium'
 copyright = '2021, stancium'
 author = 'stancium'
 
-# The full version, including alpha/beta/rc tags
+# API Version
 release = 'v1'
 
 

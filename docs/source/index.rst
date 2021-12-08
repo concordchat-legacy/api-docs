@@ -6,6 +6,8 @@
 Welcome to the Stancium API Docs!
 =================================
 
+The Official Documentation For Stancium
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
