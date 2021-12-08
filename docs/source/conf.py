@@ -75,7 +75,7 @@ myst_enable_extensions = [
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_logo = '..../stancium_sphinx.png'
+html_logo = './stancium_sphinx.png'
 # html_favicon = '../stancium_sphinx.ico'
 
 html_theme = 'furo'
