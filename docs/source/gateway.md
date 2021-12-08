@@ -1,4 +1,7 @@
-# Connecting
+# Gateway
+The Gateway Of Stancium.
+
+## Connecting
 
 Once you've connected to ``https://stancium.com/api/v(version)`` you will want to 
 
