@@ -81,16 +81,6 @@ html_logo = './stancium_sphinx.png'
 html_theme = 'furo'
 
 html_theme_options = {
-    'light_css_variables': {
-        'color-brand-primary': '#4C8CBF',
-        'color-brand-content': '#306998',
-        'color-admonition-background': 'blue',
-    },
-    'dark_css_variables': {
-        'color-brand-primary': '#306998',
-        'color-brand-content': '#FFE871',
-        'color-admonition-background': 'yellow',
-    },
     "sidebar_hide_name": False,
 }
 # Defaults To Dark Mode
