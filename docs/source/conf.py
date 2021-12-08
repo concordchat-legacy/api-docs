@@ -12,9 +12,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
-import sys
-sys.path.insert(0, os.path.abspath('....'))
+# import os
+# import sys
+# sys.path.insert(0, os.path.abspath('....'))
 
 
 # -- Project information -----------------------------------------------------
@@ -81,7 +81,7 @@ html_logo = './stancium_sphinx.png'
 html_theme = 'furo'
 
 html_theme_options = {
-    "sidebar_hide_name": False,
+    "sidebar_hide_name": True,
 }
 # Defaults To Dark Mode
 default_dark_mode = True
