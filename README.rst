@@ -7,7 +7,7 @@ Current Snowflake Values
 
 .. code:: python3
 
-	asset 					= -1
+	image 					= -1
 	user 					= 0
 	servers 				= 1
 	categories				= 2
