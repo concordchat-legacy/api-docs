@@ -13,7 +13,7 @@ When connecting you will want to use the following link for the REST API:
 
 .. code-block::
 
-   https://hatsu.vincentrps.xyz
+   https://hatsu.vincentrps.xyz/v(api-version)
 
 When connecting to the Gateway you will want to use the following link:
 
@@ -21,6 +21,13 @@ When connecting to the Gateway you will want to use the following link:
 
    wss://gateway.vincentrps.xyz
 
+**API Versions:**
+
++-----------------------------------+
+| version | status      | recommend |
++---------+-------------+-----------+
+| v1      | available   | default   |
++----+----|------+------|-----------+
 
 Index
 -----
@@ -30,3 +37,4 @@ Index
 
    users
    guilds
+   gateway
