@@ -1,3 +1,2 @@
-furo
-sphinx
-myst-parser
+git+https://github.com/bashtage/sphinx-material.git
+sphinxcontrib-httpdomain
