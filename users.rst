@@ -17,6 +17,8 @@ The following Represents a hatsu user.
 +----------------+-----------------+
 | separator      | integer         |
 +----------------+-----------------+
+| bio            | string          |
++----------------+-----------------+
 | avatar_url     | string          |
 +----------------+-----------------+
 | banner_url     | string          |
@@ -55,6 +57,8 @@ users/@me
     +-----------+---------+
     | separator | integer |
     +-----------+---------+
+    | bio       | string  |
+    +-----------+---------+
     | email     | string  |
     +-----------+---------+
     | password  | string  |
@@ -75,6 +79,8 @@ users/@me
     | username  | string  |
     +-----------+---------+
     | separator | integer |
+    +-----------+---------+
+    | bio       | string  |
     +-----------+---------+
     | email     | string  |
     +-----------+---------+
