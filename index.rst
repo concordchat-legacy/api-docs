@@ -23,11 +23,11 @@ When connecting to the Gateway you will want to use the following link:
 
 **API Versions:**
 
-+-----------------------------------+
++---------+-------------+-----------+
 | version | status      | recommend |
 +---------+-------------+-----------+
 | v1      | available   | default   |
-+----+----|------+------|-----------+
++---------+-------------+-----------+
 
 Index
 -----
