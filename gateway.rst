@@ -32,7 +32,7 @@ This is a code example of a gateway connection:
     from websockets import client
 
     async def connection():
-        ws = await client.connect('wss://gateway.vincentrps.xyz')
+        ws = await client.connect('wss://gateway.vincentrps.xyz', ping_timeout=30)
         await ws.send(json.dumps({'session_id': 'my_session_id'}))
         while True:
             recv = await ws.recv()
