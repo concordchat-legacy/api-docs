@@ -7,7 +7,7 @@ Identifying
 Once you have done the initial connection with the gateway 
 you will want to send your identification payload.
 
-+---------------------------------+
++------------+--------+-----------+
 | name       | type   | optional? |
 +------------+--------+-----------+
 | session_id | string | yes       |
