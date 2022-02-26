@@ -139,5 +139,6 @@ Routes
         :reqheader Authorization: One of ``session_id``
 
         :statuscode 200: Success
+        :statuscode 404: Not Found
         :statuscode 401: Unauthorized
 
