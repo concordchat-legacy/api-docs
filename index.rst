@@ -37,4 +37,5 @@ Index
 
    users
    guilds
+   channels
    gateway

@@ -4,6 +4,12 @@ This covers the current user-api of hatsu.
 
 A ``session_id`` is, in lamens terms, just a stringized snowflake.
 
+.. note::
+
+    Session ID's will only be seeable once you connect to the Gateway,
+    the ``READY`` events `d` payload witholds your user data, 
+    of which includes the ``session_ids`` object. 
+
 User
 ----
 The following Represents a hatsu user.
@@ -57,7 +63,7 @@ users/@me
     +-----------+---------+
     | separator | integer |
     +-----------+---------+
-    | bio       | string  |
+    | bio?      | string  |
     +-----------+---------+
     | email     | string  |
     +-----------+---------+
@@ -73,19 +79,19 @@ users/@me
 
     Edits a User
 
-    +-----------+---------+
-    | name      | type    |
-    +-----------+---------+
-    | username  | string  |
-    +-----------+---------+
-    | separator | integer |
-    +-----------+---------+
-    | bio       | string  |
-    +-----------+---------+
-    | email     | string  |
-    +-----------+---------+
-    | password  | string  |
-    +-----------+---------+
+    +------------+---------+
+    | name       | type    |
+    +------------+---------+
+    | username   | string  |
+    +------------+---------+
+    | separator  | integer |
+    +------------+---------+
+    | bio?       | string  |
+    +------------+---------+
+    | email?     | string  |
+    +------------+---------+
+    | password?  | string  |
+    +------------+---------+
 
     :statuscode 200: Success
     :statuscode 400: Invalid Data
