@@ -108,8 +108,6 @@ Routes
 
 .. http:get:: /guilds/guild-id
 
-        **RateLimit-Limit:** 5, per second.
-
         Gets a Guild
 
         Returns a Guild object, if sucessful
@@ -120,8 +118,6 @@ Routes
         :statuscode 401: Unauthorized
 
 .. http:patch:: /guilds/guild-id
-
-        **RateLimit-Limit:** 2, per 2 seconds.
 
         Edits the Guild
 
@@ -136,8 +132,6 @@ Routes
 
 .. http:delete:: /guilds/guild-id
 
-        **RateLimit-Limit:** 1, per hour
-
         Deletes a Guild
 
         :reqheader Authorization: One of ``session_id``
@@ -149,16 +143,12 @@ Routes
 
 .. http:get:: /guilds/guild-id/preview
 
-        **RateLimit-Limit:** 1, per second.
-
         Returns a Partial Guild Object, of the Guild
 
         :statuscode 200: Success
         :statuscode 404: Not Found
 
 .. http:post:: /invites/invite-code
-
-        **RateLimit-Limit:** 5, per second.
 
         Joins a Guild
 

@@ -50,8 +50,6 @@ users/@me
 
 .. http:post:: /users/@me
 
-    **RateLimit-Limit:** 1, per hour
-
     Creates a User
 
     **Arguments:**
@@ -75,8 +73,6 @@ users/@me
 
 .. http:patch:: /users/@me
 
-    **RateLimit-Limit:** 2, per second
-
     Edits a User
 
     +------------+---------+
@@ -98,8 +94,6 @@ users/@me
     :statuscode 401: Unauthorized
 
 .. http:get:: /users/@me
-
-    **RateLimit-Limit:** 5, per second
 
     Gives a user object of your currently identified account.
 
