@@ -26,6 +26,8 @@ When connecting to the Gateway you will want to use the following link:
 +---------+-------------+-----------+
 | version | status      | recommend |
 +---------+-------------+-----------+
+| v2      | available   | unstable  |
++---------+-------------+-----------+
 | v1      | available   | default   |
 +---------+-------------+-----------+
 
