@@ -29,6 +29,19 @@ When connecting to the Gateway you will want to use the following link:
 | v1      | available   | default   |
 +---------+-------------+-----------+
 
+User Agents
+-----------
+As-Of current, hatsu does **not** track the ``User-Agent`` header,
+but it is still recommended you put it there.
+
+Format: ``Library Name (https://github.com/user/library) language: version http-client: version``
+
+.. note::
+
+   The ``http-client`` is optional.
+
+Example: ``hatsu.py (https://github.com/hatsupy/hatsu.py) python: 3.10``
+
 Index
 -----
 

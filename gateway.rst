@@ -10,9 +10,9 @@ you will want to send your identification payload.
 +------------+--------+-----------+
 | name       | type   | optional? |
 +------------+--------+-----------+
-| session_id | string | yes       |
+| session_id | string | No        |
 +------------+--------+-----------+
-| encoding   | string | yes       |
+| encoding   | string | Yes       |
 +------------+--------+-----------+
 
 The encoding should be one of:
