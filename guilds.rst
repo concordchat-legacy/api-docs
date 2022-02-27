@@ -119,6 +119,34 @@ Routes
         :statuscode 200: Success
         :statuscode 401: Unauthorized
 
+.. http:patch:: /guilds/guild-id
+
+        **RateLimit-Limit:** 2, per 2 seconds.
+
+        Edits the Guild
+
+        Returns the Edited objects, if sucessful
+
+        :reqheader Authorization: One of ``session_id``
+
+        :statuscode 200: Success
+        :statuscode 201: Not a Member, or incorrect session_id
+        :statuscode 203: Not enough permissions
+        :statuscode 404: Not Found
+
+.. http:delete:: /guilds/guild-id
+
+        **RateLimit-Limit:** 1, per hour
+
+        Deletes a Guild
+
+        :reqheader Authorization: One of ``session_id``
+
+        :statuscode 201: Not a Member, or incorrect session_id
+        :statuscode 203: Not enough permissions
+        :statuscode 204: Success (No Content)
+        :statuscode 404: Not Found
+
 .. http:get:: /guilds/guild-id/preview
 
         **RateLimit-Limit:** 1, per second.
