@@ -27,7 +27,7 @@ Format: ``Library Name (https://github.com/user/library) language: version http-
 
    The ``http-client`` is optional.
 
-Example: ``hatsu.py (https://github.com/hatsupy/hatsu.py) python: 3.10``
+Example: ``hatsu.py (https://github.com/hatsupy/hatsu.py) python: 3.10 aiohttp: 3.8.1``
 
 Index
 -----
@@ -39,3 +39,4 @@ Index
    guilds
    channels
    gateway
+   ratelimiting
