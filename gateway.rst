@@ -66,8 +66,60 @@ A event payload goes as so:
         }
     }
 
+**PRESENCE_UPDATE** Payload:
+
+.. code-block:: json
+    
+    {
+    "t": "PRESENCE_UPDATE",
+    "id": 123456,
+    "d": {
+        "type": 1/2/3/4,
+        "description": "string",
+        "emoji": emoji_id,
+        "embed": {
+            "name": "string",
+            "description": "string",
+            "banner_url": "string",
+            "text": {
+                "top": "string",
+                "bottom": "string",
+                }
+            }
+        }
+    }
+
+**NOTIFICATION** Payload:
+
+.. code-block:: json
+
+    {
+    "t": "NOTIFICATION",
+    "type": "MESSAGE, GUILD, EVERYONE, HERE",
+    "excerpt": {
+            ...
+        }
+    }
+
 Event Reference
 ---------------
 
-- ``API_READY`` Called when the REST API starts a connection with the gateway.
-- ``CHANNEL_CREATE`` Called when a channel is created
+- ``GUILD_CREATE`` Called when you create a Guild.
+
+- ``GUILD_JOIN`` Called when you join a Guild.
+
+- ``GUILD_INIT`` Called after you get the `READY` event. 
+Given one time for each guild, 
+The new ``channels`` field will be added to the guild object.
+
+- ``GUILD_UPDATE`` Called when a Guild is updated.
+
+- ``GUILD_DELETE`` Called when a Guild is deleted.
+
+- ``INVITE_CREATE`` Called when a user creates an invite.
+
+- ``CHANNEL_CREATE`` Called when a channel is created.
+
+- ``PRESENCE_UPDATE`` Called when a user updates there presence.
+
+- ``NOTIFICATION`` Called when you get a notification
