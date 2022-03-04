@@ -44,6 +44,20 @@ Format: ``Library Name (https://github.com/user/library) language: version http-
 
 Example: ``hatsu.py (https://github.com/hatsupy/hatsu.py) python: 3.10``
 
+Snowflakes
+----------
+hatsu uses snowflakes as it's one-time id unique generation platform, these are based off the twitter snowflake.
+
+A hatsu snowflake normally are made with:
+
+- The Epoch: ``1577836801``, The first second of 2020.
+- Worker ID: Generated from the Current Thread Process.
+- Datacenter ID: 0, We are working on making this more unique.
+- TimeStamp: The Current Epoch.
+- Sequence: The Current Sequence + 1.
+
+and thats it.  This could be seen as too much but it helps make id's which are small and unique.
+
 Index
 -----
 
