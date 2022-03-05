@@ -2,6 +2,20 @@ Gateway
 =======
 The Gateway is hatsu's way of implementing a easy--affordable and non-blocking event system.
 
+Gaining the Port
+----------------
+The Gateway uses ports to separate connections and keep ram efficient,
+at highest ports can only have 4000 users on them.
+
+Example of getting a port:
+
+.. code-block:: python3
+
+    import requests
+
+    r = requests.get('https://gateway.vincentrps.xyz/port')
+    print(r.json())
+
 Identifying
 -----------
 Once you have done the initial connection with the gateway 
@@ -29,7 +43,11 @@ This is a code example of a gateway connection:
 
     import json
     import asyncio
+    import requests
     from websockets import client
+
+    r = requests.get('https://gateway.vincentrps.xyz/port')
+    d = r.json()
 
     async def connection():
         ws = await client.connect('wss://gateway.vincentrps.xyz', ping_timeout=30)
@@ -45,7 +63,7 @@ Keeping Alive
 The only thing you need to do to keep the connection alive, 
 is to ping the gateway before the timeout runs out.
 
-- ``PING_TIMEOUT``: 30 seconds.
+- ``PING_TIMEOUT``: 20 seconds.
 - ``PING_INTERVAL``: 20 seconds.
 
 .. note::
