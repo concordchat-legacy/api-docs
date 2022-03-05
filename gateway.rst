@@ -50,7 +50,7 @@ This is a code example of a gateway connection:
     d = r.json()
 
     async def connection():
-        ws = await client.connect('wss://gateway.vincentrps.xyz', ping_timeout=30)
+        ws = await client.connect(f'wss://gateway.vincentrps.xyz:{d["port"]}', ping_timeout=20)
         await ws.send(json.dumps({'session_id': 'my_session_id'}))
         while True:
             recv = await ws.recv()
