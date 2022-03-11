@@ -4,17 +4,21 @@ The Gateway is hatsu's way of implementing a easy--affordable and non-blocking e
 
 Gaining the Port
 ----------------
-The Gateway uses ports to separate connections and keep ram efficient,
-at highest ports can only have 4000 users on them.
+hatsu separates client connections using addresses
 
-Example of getting a port:
+to get an available one just do:
 
 .. code-block:: python3
 
     import requests
 
-    r = requests.get('https://gateway.vincentrps.xyz/port')
+    r = requests.get('https://gateway.vincentrps.xyz/available')
     print(r.json())
+
+Available Domains
+~~~~~~~~~~~~~~~~~
+
+production-1: ``wss://gateway-prod-1.vincentrps.xyz``
 
 Identifying
 -----------
@@ -46,8 +50,8 @@ This is a code example of a gateway connection:
     import requests
     from websockets import client
 
-    r = requests.get('https://gateway.vincentrps.xyz/port')
-    d = r.json()
+    r = requests.get('https://gateway.vincentrps.xyz/available')
+    d = r.text
 
     async def connection():
         ws = await client.connect(f'wss://gateway.vincentrps.xyz:{d["port"]}', ping_timeout=20)

@@ -86,8 +86,6 @@ Routes
 
 .. http:post:: /guilds
 
-    **RateLimit-Limit:** 1, per minute.
-
     Create's a Guild
 
     +---------------+-----------+
