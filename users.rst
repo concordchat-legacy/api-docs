@@ -1,6 +1,6 @@
 Users
 =====
-This covers the current user-api of hatsu.
+This covers the current user-api of Ayaka.
 
 A ``session_id`` is, in lamens terms, just a stringized snowflake.
 
@@ -12,7 +12,7 @@ A ``session_id`` is, in lamens terms, just a stringized snowflake.
 
 User
 ----
-The following Represents a hatsu user.
+The following Represents a Ayaka user.
 
 +----------------+-----------------+
 | name           | type            |

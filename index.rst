@@ -1,6 +1,6 @@
 Welcome
 =======
-Welcome to the official, one--and--only api documentation for hatsu.
+Welcome to the official, one--and--only api documentation for Ayaka.
 
 Connecting
 ----------
@@ -18,7 +18,7 @@ When connecting to the Gateway you will want to use the following link:
 
 User Agents
 -----------
-As-Of current, hatsu does **not** track the ``User-Agent`` header,
+As-Of current, Ayaka does **not** track the ``User-Agent`` header,
 but it is still recommended you put it there.
 
 Format: ``Library Name (https://github.com/user/library) language: version http-client: version``
@@ -27,17 +27,17 @@ Format: ``Library Name (https://github.com/user/library) language: version http-
 
    The ``http-client`` is optional.
 
-Example: ``hatsu.py (https://github.com/hatsupy/hatsu.py) python: 3.10 aiohttp: 3.8.1``
+Example: ``ayaka.py (https://github.com/Ayakapy/Ayaka.py) python: 3.10 aiohttp: 3.8.1``
 
 Snowflakes
 ----------
-hatsu uses snowflakes as it's one-time id unique generation platform, these are based off the twitter snowflake.
+Ayaka uses snowflakes as it's one-time id unique generation platform, these are based off the twitter snowflake.
 
-A hatsu snowflake normally are made with:
+A Ayaka snowflake normally are made with:
 
 - The Epoch: ``1577836801``, The first second of 2020.
 - Worker ID: Generated from the Current Thread Process.
-- Datacenter ID: 0, We are working on making this more unique.
+- Datacenter ID: 0.
 - TimeStamp: The Current Epoch.
 - Sequence: The Current Sequence + 1.
 

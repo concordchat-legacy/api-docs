@@ -1,10 +1,10 @@
 Gateway
 =======
-The Gateway is hatsu's way of implementing a easy--affordable and non-blocking event system.
+The Gateway is Ayaka's way of implementing a easy--affordable and non-blocking event system.
 
 Gaining the Port
 ----------------
-hatsu separates client connections using addresses
+Ayaka separates client connections using addresses
 
 to get an available one just do:
 

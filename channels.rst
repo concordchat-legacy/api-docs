@@ -1,6 +1,6 @@
 Channels
 ========
-Channels are hatsu's one-way communication type for both messages and voice.
+Channels are Ayaka's one-way communication type for both messages and voice.
 
 
 Category

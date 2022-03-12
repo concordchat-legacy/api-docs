@@ -1,6 +1,11 @@
 RateLimiting
 ============
-These are the RateLimit headers hatsu gives you
+Ayaka implements ratelimits in a straight forward--and easy matter.
+
+.. note::
+
+    The current ratelimit implementation on the backend 
+    is still a bit iffy and is due to change.
 
 .. code-block::
 

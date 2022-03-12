@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'hatsu'
-copyright = '2021-2022, hatsu'
-author = 'hatsu'
+project = 'Ayaka'
+copyright = '2021-2022, Ayaka'
+author = 'Ayaka'
 
 # The full version, including alpha/beta/rc tags
 release = 'v1'
@@ -56,19 +56,19 @@ html_theme = 'sphinx_material'
 html_theme_options = {
 
     # Set the name of the project to appear in the navigation.
-    'nav_title': 'hatsu',
+    'nav_title': 'Ayaka',
 
     # Specify a base_url used to generate sitemap.xml. If not
     # specified, then no sitemap will be built.
-    'base_url': 'https://hatsuapp.github.io/hatsu-api-docs',
+    'base_url': 'https://ayakachat.github.io/ayaka-api-docs',
 
     # Set the color and the accent color
     'color_primary': 'blue',
     'color_accent': 'light-blue',
 
     # Set the repo location to get a badge with stats
-    'repo_url': 'https://github.com/hatsuapp/hatsu-api-docs',
-    'repo_name': 'hatsu-api-docs',
+    'repo_url': 'https://github.com/ayakachat/ayaka-api-docs',
+    'repo_name': 'Ayaka-api-docs',
 
     # Visible levels of the global TOC; -1 means unlimited
     'globaltoc_depth': 3,
