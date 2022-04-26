@@ -11,7 +11,7 @@ We recommend when upgrading Ekranoplan to make sure you have the right versions 
 We can and will most probably make changes in minor versions.
 
 ## Ratelimits
-Currently, the official implementation does not house any ratelimiting, as we do that using NGINX and Cloudflare.
+Currently, the official implementation does not house any ratelimiting, as we are instead using NGINX and Cloudflare.
 
 But if you are intereasted in making one for your implementation, or possibly helping us with making one here is the current ruleset:
 
