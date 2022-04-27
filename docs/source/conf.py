@@ -33,6 +33,7 @@ extensions = [
     "sphinx_energia_theme",
     "sphinx_multiversion",  # optional
     "recommonmark",  # optional
+    "sphinxcontrib.httpdomain"
 ]
 
 # The suffix(es) of source filenames.

@@ -23,4 +23,9 @@
   :class: large-6
   :anchor: Learn more
 
-  Learn to configure the documentation look and feel and extensions.
+  Concord REST API Documentation
+
+.. toctree::
+  :hidden:
+
+  ekranoplan/index
