@@ -15,6 +15,15 @@
   Fast, Flexible, and Scalable Standard for Chatting Platforms.
 
 .. topic-box::
+  :title: Reference
+  :link: reference/index.html
+  :icon: scylla-icon scylla-icon--integrations
+  :class: large-6
+  :anchor: Learn more
+
+  Concord API Reference
+
+.. topic-box::
   :title: Ekranoplan
   :link: ekranoplan/index.html
   :icon: scylla-icon scylla-icon--integrations
