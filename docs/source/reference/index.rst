@@ -14,7 +14,7 @@ API Versioning
 ~~~~~~~~~~~~~~
 
 The API is versioned to prevent breaking changes for old code,
-at the end of the bsaeurl you will have to add something like ``/v(API Version)``.
+at the end of the baseurl you will have to add something like ``/v(API Version)``.
 
 +--------+-----------+
 | Number | Status    |

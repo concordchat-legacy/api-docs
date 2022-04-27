@@ -35,5 +35,5 @@
 .. toctree::
   :hidden:
 
-  ekranoplan/index
   reference/index
+  ekranoplan/index
