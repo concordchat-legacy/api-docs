@@ -36,3 +36,4 @@
   :hidden:
 
   ekranoplan/index
+  reference/index
