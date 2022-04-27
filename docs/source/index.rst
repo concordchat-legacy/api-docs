@@ -10,11 +10,9 @@
 .. title:: Concord Documentation
 
 .. hero-box::
-  :button_icon: fa fa-github
-  :button_url: https://github.com/concordchat/energia
-  :button_text: Source code
   :title: Welcome to Concord Documentation
 
+  Fast, Flexible, and Scalable Standard for Chatting Platforms.
 
 .. topic-box::
   :title: Ekranoplan
