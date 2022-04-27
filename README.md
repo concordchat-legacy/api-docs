@@ -1,4 +1,4 @@
-# Energia
+# Intro
 Welcome to the Official Documentation for the Concord Standard APIs (Energia).
 
 ## APIs Documented
@@ -7,8 +7,8 @@ Welcome to the Official Documentation for the Concord Standard APIs (Energia).
 
 ## APIs To be Documented
 
-- [Blackbird](https://github.com/concordchat/blackbird)
-- [Valkyrie](https://github.com/concordchat/valkyrie)
+- [Blackbird](https://github.com/nitrodb/nitrows)
+- [Valkyrie](https://github.com/nitrodb/nitrocdn)
 - Foxbat
 - Venera
 - Snowcruiser

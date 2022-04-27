@@ -1,0 +1,162 @@
+/* This stylesheet uses the !important operator
+   to overwrite expertrec custom CSS rules.
+*/
+.search-box {
+  background: $color-background-search-box;
+  border-radius: 4px;
+  display: flex;
+  padding: 10px 15px;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 2px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 18px;
+    min-width: 18px;
+    width: 20px;
+    background-image: url("../img/icons/icon-search.svg");
+    filter: brightness(0);
+  }
+
+  ci-search,
+  .er-dummy-search,
+  .er-dummy-search-box,
+  .er-search-form {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  input {
+    background: transparent !important;
+    color: rgba(80, 80, 80, 0.5) !important;
+    font-size: $font-small !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+
+    &::placeholder {
+      color: rgba(80, 80, 80, 0.5) !important;
+      opacity: 1 !important;
+    }
+  }
+
+  button {
+    display: none !important;
+  }
+}
+
+.er_search_suggestions {
+  @include floating;
+  border: 0 !important;
+
+  .er-search-result-box {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border-width: 1px !important;
+
+    &:hover {
+      background: $color-background-search-item-hover !important;
+    }
+  }
+
+  .er_more_result_btn {
+    cursor: pointer;
+  }
+
+  h3 {
+    font-size: $font-base !important;
+  }
+}
+
+/* Results page*/
+.er-search-content {
+  padding: 20px !important;
+}
+
+#er_search_results {
+  .er-search-result-box {
+    margin: 0 auto !important;
+    margin-top: 10px !important;
+    display: block !important;
+    width: 100% !important;
+  }
+  .title a,
+  .url a,
+  .text {
+    max-width: 100% !important;
+  }
+}
+
+#search-result-input-form {
+  max-width: 800px !important;
+}
+
+#er_search_button {
+  text-align: center;
+}
+
+#er_clear_input {
+  top: 0 !important;
+  right: 0 !important;
+}
+
+.er-facet-header {
+  background-color: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  padding-bottom: 8px !important;
+}
+
+.er-facet-val {
+  padding: 5px 2px !important;
+
+  input {
+    display: block !important;
+    margin: 0;
+  }
+}
+
+#er_search_pagination {
+  margin-top: 20px !important;
+
+  li.er-paginator-list.er-active {
+    border-bottom: 0 !important;
+    font-weight: bold;
+  }
+}
+
+/* Mobile */
+.er-suggestion-sm {
+  .er_search_input_dummy {
+    margin: 0 !important;
+  }
+  .er_search_button_dummy {
+    border: 0 !important;
+  }
+}
+
+#er_gcs_mobile_model_container .er-facet-values .er-facet-val {
+  align-items: baseline;
+}
+
+@media screen and (min-width: $medium) {
+  .er-facets {
+    display: none;
+    width: initial !important;
+    min-width: initial !important;
+    max-width: 300px !important;
+  }
+}
+
+@media screen and (min-width: $xlarge) {
+  .er-facets {
+    display: block;
+    position: fixed !important;
+  }
+  .er-facet-count {
+    display: none;
+  }
+}

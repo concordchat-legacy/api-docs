@@ -1,0 +1,28 @@
+<header class="header">
+    <div class="header-logo">
+        <a class="header-logo__img" href="https://docs.concord.chat">
+            <img src="{{ pathto('_static/img/logo-docs.svg', 1) }}" alt="Concord Documentation Logo" />
+        </a>
+        <span class="header-logo__bar"></span>
+        <a class="header-logo__text" href="https://docs.concord.chat/">
+            Documentation
+        </a>
+    </div>
+    <div class="header-navigation">
+        <div class="header-button">
+            <a href="https://github.com/concordchat" class="button">Github</a>
+        </div>
+        <div class="header-button">
+            <a href="https://github.com/nitrodb" class="button">NitroDB Github</a>
+        </div>
+        <div class="header-button">
+            <a href="https://github.com/concordchat/branding" class="button">Branding</a>
+        </div>
+    </div>
+    <div class="header-search-box">
+        <div class="search-box">
+            <ci-search></ci-search>
+        </div>
+    </div>
+    {% include 'side-nav-toggle.html' %}
+</header>

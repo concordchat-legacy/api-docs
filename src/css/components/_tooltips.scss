@@ -1,0 +1,19 @@
+.tooltip {
+  background-color: $color-background-tooltip;
+  border-radius: 4px;
+  font-size: $font-smallest;
+  padding: 6px;
+
+  &:before {
+    display: none !important;
+  }
+}
+
+.tooltip:empty {
+  display: none !important;
+}
+
+.has-tip {
+  border: 0;
+  cursor: pointer;
+}
