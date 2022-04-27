@@ -45,7 +45,7 @@ Snowflakes are **always** given as a integer by the API but doesn't need to be t
 Supported Locales
 ~~~~~~~~~~~~~~~~~
 
-.. note:: Locales are a thing only verified by frontends, the backends are english-only
+.. note:: Locales are only used by frontends, backends should be english-only
 
 +-----------+-----------------------+
 | Locale    | Country               |
