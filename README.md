@@ -3,7 +3,7 @@ Welcome to the Official Documentation for the Concord Standard APIs (Energia).
 
 ## APIs Documented
 
-- [Ekranoplan](/ekranoplan/index.md)
+- [Ekranoplan](https://github.com/nitrodb/nitrodb)
 
 ## APIs To be Documented
 
@@ -13,7 +13,7 @@ Welcome to the Official Documentation for the Concord Standard APIs (Energia).
 - Venera
 - Snowcruiser
 - Rotodyne
-- airbus
+- Airbus
 
 ## Bots & User Bots
 Currently Ekranoplan has not implemented bot creation,
