@@ -130,6 +130,8 @@ Example:
         "owner": true
     }
 
+.. _create_guild:
+
 .. http:post:: /guilds
 
     :synopsis: Returns a :ref:`Guild <Guild Object>` object.
@@ -215,6 +217,8 @@ Example:
     :statuscode 201: Success
     :statuscode 400: Bad Data
 
+.. _edit_guild:
+
 .. http:patch:: /guilds/:id
 
     :synopsis: Returns the edited :ref:`Guild<Guild Object>` object.
@@ -239,6 +243,8 @@ Example:
     :statuscode 200: Success
     :statuscode 401: Forbidden
 
+.. _delete_guild:
+
 .. http:delete:: /guilds/:id
 
     :synopsis: Deletes the Guild if the requester is the owner and the Guild is not specified as "large".
@@ -246,12 +252,16 @@ Example:
     :statuscode 203: Success
     :statuscode 401: Forbidden 
 
+.. _get_guild:
+
 .. http:get:: /guilds/:id
 
     :synopsis: Returns the :ref:`object<Guild Object>` of this Guild, if you are a member.
 
     :statuscode 200: Success
     :statuscode 401: Forbidden
+
+.. _claim_vanity:
 
 .. http:put:: /guilds/:id/vanity
 

@@ -51,6 +51,7 @@ Settings Object
 | accept_direct_messages | boolean  | If the User is accepting Direct Messages |
 +------------------------+----------+------------------------------------------+
 
+.. _users_me:
 
 .. http:get:: /users/@me
 
@@ -60,6 +61,7 @@ Settings Object
 
     :statuscode 200: Success
 
+.. _get_user:
 
 .. http:get:: /users/:id
 
@@ -70,6 +72,7 @@ Settings Object
     :statuscode 200: Success
     :statuscode 404: User Not Found
 
+.. _create_user:
 
 .. http:post:: /users
 
