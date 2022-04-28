@@ -131,6 +131,7 @@ Example:
     }
 
 .. http:post:: /guilds
+
     :synopsis: Returns a :ref:`Guild <Guild Object>` object.
 
     Example:
@@ -189,21 +190,23 @@ Example:
                 }
             ],
             "messages": [
-                "id": "7272479179997184",
-                "channel_id": "7513514956130329",
-                "bucket_id": 1,
-                "guild_id": "7272442631815168",
-                "author": {}, // Your User Object
-                "content": "", // Random Welcome Message
-                "mentions": [], // Your User Object in a list
-                "created_at": "2022-04-27T11:33:26.503471+00:00",
-                "last_edited": "2022-04-27T11:33:26.503471+00:00",
-                "tts": false,
-                "mentions_everyone": false,
-                "embeds": [],
-                "reactions": [],
-                "pinned": false,
-                "referenced_message_id": null
+                {
+                    "id": "7272479179997184",
+                    "channel_id": "7513514956130329",
+                    "bucket_id": 1,
+                    "guild_id": "7272442631815168",
+                    "author": {}, // Your User Object
+                    "content": "", // Random Welcome Message
+                    "mentions": [], // Your User Object in a list
+                    "created_at": "2022-04-27T11:33:26.503471+00:00",
+                    "last_edited": "2022-04-27T11:33:26.503471+00:00",
+                    "tts": false,
+                    "mentions_everyone": false,
+                    "embeds": [],
+                    "reactions": [],
+                    "pinned": false,
+                    "referenced_message_id": null
+                }
             ]
         }
 
