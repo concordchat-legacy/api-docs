@@ -11,7 +11,7 @@
 
 .. hero-box::
   :title: Welcome to Concord Documentation
-  :image: /_static/img/scales.svg
+  :image: /developers/docs/_static/img/scales.svg
 
   Fast, Flexible, and Scalable Standard for Chatting Platforms.
 
