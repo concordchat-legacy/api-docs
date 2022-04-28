@@ -216,6 +216,7 @@ Example:
     :statuscode 400: Bad Data
 
 .. http:patch:: /guilds/:id
+
     :synopsis: Returns the edited :ref:`Guild<Guild Object>` object.
 
     Requires One of:
@@ -239,18 +240,21 @@ Example:
     :statuscode 401: Forbidden
 
 .. http:delete:: /guilds/:id
+
     :synopsis: Deletes the Guild if the requester is the owner and the Guild is not specified as "large".
 
     :statuscode 203: Success
     :statuscode 401: Forbidden 
 
 .. http:get:: /guilds/:id
+
     :synopsis: Returns the :ref:`object<Guild Object>` of this Guild, if you are a member.
 
     :statuscode 200: Success
     :statuscode 401: Forbidden
 
 .. http:put:: /guilds/:id/vanity
+
     :synopsis: Claim the Guilds Vanity, Returns a new :ref:`Guild<Guild Object>` object.
 
     Requires One of:
