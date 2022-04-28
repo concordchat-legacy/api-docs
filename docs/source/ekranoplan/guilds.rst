@@ -53,7 +53,7 @@ Example:
         "vanity_url": "genshinfanclub",
         "nsfw": false,
         "large": false,
-        "perferred_locale": "EN_US",
+        "perferred_locale": "en_US",
         "permissions": "0",
         "splash": "",
         "features": []
@@ -162,7 +162,7 @@ Example:
             "vanity_url": "",
             "nsfw": false,
             "large": false,
-            "perferred_locale": "EN_US",
+            "perferred_locale": "en_US",
             "permissions": "0",
             "splash": "",
             "features": [],

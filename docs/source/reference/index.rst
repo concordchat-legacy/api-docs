@@ -50,5 +50,5 @@ Supported Locales
 +-----------+-----------------------+
 | Locale    | Country               |
 +-----------+-----------------------+
-| EN_US     | United States/Britan  |
+| eu_US     | United States/Britan  |
 +-----------+-----------------------+

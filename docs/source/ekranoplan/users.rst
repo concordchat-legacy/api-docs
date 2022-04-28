@@ -91,7 +91,7 @@ Settings Object
 
             // Optional
             "bio": "Super Cool Bio",
-            "locale": "EN_US"
+            "locale": "en_US"
         }
 
     :query string utm_source: A Optional Referrer
