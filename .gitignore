@@ -212,3 +212,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# vercel config
+.vercel

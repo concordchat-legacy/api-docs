@@ -33,7 +33,8 @@ extensions = [
     "sphinx_energia_theme",
     "sphinx_multiversion",  # optional
     "recommonmark",  # optional
-    "sphinxcontrib.httpdomain"
+    "sphinxcontrib.httpdomain",
+    "sphinx.ext.autosectionlabel"
 ]
 
 # The suffix(es) of source filenames.
@@ -123,7 +124,7 @@ html_sidebars = {"**": ["side-nav.html"]}
 htmlhelp_basename = "ScyllaDocumentationdoc"
 
 # URL which points to the root of the HTML documentation.
-html_baseurl = "https://docs.concord.chat"
+html_baseurl = "https://concord.chat/developers/docs"
 
 # Dictionary of values to pass into the template engine’s context for all pages
 html_context = {"html_baseurl": html_baseurl}

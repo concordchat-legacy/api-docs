@@ -4,6 +4,8 @@ Guilds
 Concord Names its Communitys "guilds," Guilds don't have a fixed member limit inside the standard, 
 but it is recommended you add it to your implementation.
 
+.. _Guild Object:
+
 Guild Object
 ~~~~~~~~~~~~
 
@@ -57,6 +59,8 @@ Example:
         "features": []
     }
 
+.. _Guild Invite Object:
+
 Guild Invite Object
 ~~~~~~~~~~~~~~~~~~~
 
@@ -82,6 +86,8 @@ Example:
         "creator_id": "7272479179997184",
         "created_at": "2022-04-27T11:33:26.503471+00:00"
     }
+
+.. _Guild Member Object:
 
 Member Object
 ~~~~~~~~~~~~~
@@ -124,4 +130,131 @@ Example:
         "owner": true
     }
 
-.. TODO:: Document Routes
+.. http:post:: /guilds
+    :synopsis: Returns a :ref:`Guild <Guild Object>` object.
+
+    Example:
+
+    .. code-block:: json
+
+        {
+            "name": "Genshin Impact Fan Club"
+
+            // Optional
+            "description": "Fan Club for Genshin Impact!",
+            "nsfw": false
+        }
+
+    Response:
+
+    .. code-block:: json
+
+        {
+            "id": "7272442631815168",
+            "owner_id": "7272479179997184",
+            "name": "Genshin Impact Fan Club",
+            "description": "Fan Club for Genshin Impact!",
+            "icon": "",
+            "banner": "",
+            "vanity_url": "",
+            "nsfw": false,
+            "large": false,
+            "perferred_locale": "EN_US",
+            "permissions": "0",
+            "splash": "",
+            "features": [],
+            "members": [], // Your Member Object
+            "channels": [
+                {
+                    "id": "7513087221205917",
+                    "guild_id": "7272442631815168",
+                    "name": "Text Channels",
+                    "parent_id": 0,
+                    "position": 0,
+                    "type": 1,
+                    "permission_overwrites": [],
+                    "topic": "",
+                    "slowmode_timeout": 0
+                },
+                {
+                    "id": "7513514956130329",
+                    "guild_id": "7272442631815168",
+                    "name": "general",
+                    "parent_id": "7513087221205917",
+                    "position": 1,
+                    "type": 1,
+                    "permission_overwrites": [],
+                    "topic": "",
+                    "slowmode_timeout": 0
+                }
+            ],
+            "messages": [
+                "id": "7272479179997184",
+                "channel_id": "7513514956130329",
+                "bucket_id": 1,
+                "guild_id": "7272442631815168",
+                "author": {}, // Your User Object
+                "content": "", // Random Welcome Message
+                "mentions": [], // Your User Object in a list
+                "created_at": "2022-04-27T11:33:26.503471+00:00",
+                "last_edited": "2022-04-27T11:33:26.503471+00:00",
+                "tts": false,
+                "mentions_everyone": false,
+                "embeds": [],
+                "reactions": [],
+                "pinned": false,
+                "referenced_message_id": null
+            ]
+        }
+
+    :reqheader Authorization: User Token
+
+    :statuscode 201: Success
+    :statuscode 400: Bad Data
+
+.. http:patch:: /guilds/:id
+    :synopsis: Returns the edited :ref:`Guild<Guild Object>` object.
+
+    Requires One of:
+        - Guild Owner
+        - Manage Guild
+        - Adminstrator
+
+    Example:
+
+    .. code-block:: json
+
+        {
+            "name": "Genshin Fan Club",
+            "description": "The best Genshin Fan Club on Concord!",
+            "nsfw": false
+        }
+
+    :reqheader Authorization: User Token
+
+    :statuscode 200: Success
+    :statuscode 401: Forbidden
+
+.. http:delete:: /guilds/:id
+    :synopsis: Deletes the Guild if the requester is the owner and the Guild is not specified as "large".
+
+    :statuscode 203: Success
+    :statuscode 401: Forbidden 
+
+.. http:get:: /guilds/:id
+    :synopsis: Returns the :ref:`object<Guild Object>` of this Guild, if you are a member.
+
+    :statuscode 200: Success
+    :statuscode 401: Forbidden
+
+.. http:put:: /guilds/:id/vanity
+    :synopsis: Claim the Guilds Vanity, Returns a new :ref:`Guild<Guild Object>` object.
+
+    Requires One of:
+        - Guild Owner
+        - Adminstrator
+
+    :query string utm_vanity: The Vanity Code
+
+    :statuscode 201: Success
+    :statuscode 401: Forbidden

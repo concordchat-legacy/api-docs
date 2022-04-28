@@ -35,8 +35,9 @@ But if you are intereasted in making one for your implementation, or possibly he
 .. toctree::
     :maxdepth: 2
     :hidden:
-    
+
     guilds
+    users
 
 .. panel-box::
   :title: Overview
@@ -44,3 +45,4 @@ But if you are intereasted in making one for your implementation, or possibly he
   :class: my-panel
 
   * :doc:`Guilds <guilds>` - Guild Documentation.
+  * :doc:`Users <guilds>` - Users Documentation.
