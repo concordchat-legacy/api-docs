@@ -1,5 +1,5 @@
+# Properly detect languages on GitHub
 *.rst linguist-detectable=true
-*.js linguist-detectable=false
-*.py linguist-detectable=false
-*.scss linguist-detectable=false
-*.html linguist-detectable=false
+
+# Normalize EOL for all files that Git considers text files
+* text=auto eol=lf
