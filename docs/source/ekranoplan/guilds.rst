@@ -38,25 +38,30 @@ Guild Object
 +-------------------+-----------+-------------------------------------------+
 | features          | list      | A list of the Guilds' Beta Features       |
 +-------------------+-----------+-------------------------------------------+
+| verified          | boolean   | If the server is verified                 |
++-------------------+-----------+-------------------------------------------+
+
+.. NOTE:: Due to multiple API deprecations, please be prepared to handle both ``EN_US`` and ``en_US``.
 
 Example:
 
 .. code-block:: json
 
     {
-        "id": "7272442631815168",
-        "owner_id": "7272479179997184",
-        "name": "Genshin Impact Fan Club",
-        "description": "Fan Club for Genshin Impact!",
+        "id": "8272616840232960",
+        "name": "Genshin Impact",
+        "description": "",
+        "vanity_url": "genshinimpact",
         "icon": "",
         "banner": "",
-        "vanity_url": "genshinfanclub",
+        "owner_id": "6427339792089088",
         "nsfw": false,
         "large": false,
         "perferred_locale": "en_US",
-        "permissions": "0",
+        "permissions": "33938497",
         "splash": "",
-        "features": []
+        "features": [],
+        "verified": false
     }
 
 .. _Guild Invite Object:
@@ -82,8 +87,8 @@ Example:
 
     {
         "id": "GkD9H5Y",
-        "guild_id": "7272442631815168",
-        "creator_id": "7272479179997184",
+        "guild_id": "8272616840232960",
+        "creator_id": "6427339792089088",
         "created_at": "2022-04-27T11:33:26.503471+00:00"
     }
 
@@ -98,8 +103,6 @@ Member Object
 | id        | snowflake                 | The User ID of this Member                        |
 +-----------+---------------------------+---------------------------------------------------+
 | guild_id  | snowflake                 | The Members Guild ID                              |
-+-----------+---------------------------+---------------------------------------------------+
-| user      | :ref:`User<User Object>`  | The underlying User of this Member                |
 +-----------+---------------------------+---------------------------------------------------+
 | avatar    | ?string                   | The Users Guild Avatar                            |
 +-----------+---------------------------+---------------------------------------------------+
@@ -119,9 +122,8 @@ Example:
 .. code-block:: json
 
     {
-        "id": "7272479179997184",
-        "guild_id": "7272442631815168",
-        "user": {},
+        "id": "6427339792089088",
+        "guild_id": "8272616840232960",
         "avatar": "",
         "banner": "",
         "joined_at": "2022-04-27T11:33:26.503471+00:00",
@@ -141,10 +143,10 @@ Example:
     .. code-block:: json
 
         {
-            "name": "Genshin Impact Fan Club"
+            "name": "Genshin Impact",
 
             // Optional
-            "description": "Fan Club for Genshin Impact!",
+            "description": "A Genshin Impact Concord",
             "nsfw": false
         }
 
@@ -153,10 +155,10 @@ Example:
     .. code-block:: json
 
         {
-            "id": "7272442631815168",
-            "owner_id": "7272479179997184",
-            "name": "Genshin Impact Fan Club",
-            "description": "Fan Club for Genshin Impact!",
+            "id": "6427339792089088",
+            "owner_id": "8272616840232960",
+            "name": "Genshin Impact",
+            "description": "A Genshin Impact Concord",
             "icon": "",
             "banner": "",
             "vanity_url": "",
@@ -166,7 +168,18 @@ Example:
             "permissions": "0",
             "splash": "",
             "features": [],
-            "members": [], // Your Member Object
+            "members": [
+                {
+                    "id": "6427339792089088",
+                    "guild_id": "8272616840232960",
+                    "avatar": "",
+                    "banner": "",
+                    "joined_at": "2022-04-27T11:33:26.503471+00:00",
+                    "roles": [],
+                    "nick": "",
+                    "owner": true
+                }
+            ],
             "channels": [
                 {
                     "id": "7513087221205917",
@@ -191,25 +204,6 @@ Example:
                     "slowmode_timeout": 0
                 }
             ],
-            "messages": [
-                {
-                    "id": "7272479179997184",
-                    "channel_id": "7513514956130329",
-                    "bucket_id": 1,
-                    "guild_id": "7272442631815168",
-                    "author": {}, // Your User Object
-                    "content": "", // Random Welcome Message
-                    "mentions": [], // Your User Object in a list
-                    "created_at": "2022-04-27T11:33:26.503471+00:00",
-                    "last_edited": "2022-04-27T11:33:26.503471+00:00",
-                    "tts": false,
-                    "mentions_everyone": false,
-                    "embeds": [],
-                    "reactions": [],
-                    "pinned": false,
-                    "referenced_message_id": null
-                }
-            ]
         }
 
     :reqheader Authorization: User Token
@@ -247,7 +241,7 @@ Example:
 
 .. http:delete:: /guilds/:id
 
-    :synopsis: Deletes the Guild if the requester is the owner and the Guild is not specified as "large".
+    :synopsis: Deletes the Guild if the requester is the owner and the Guild is not specified as "large."
 
     :statuscode 203: Success
     :statuscode 401: Forbidden 
@@ -266,6 +260,8 @@ Example:
 .. http:put:: /guilds/:id/vanity
 
     :synopsis: Claim the Guilds Vanity, Returns a new :ref:`Guild<Guild Object>` object.
+
+    Please make sure the Vanity isn't taken before requesting.
 
     Requires One of:
         - Guild Owner
