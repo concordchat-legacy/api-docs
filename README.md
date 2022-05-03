@@ -1,5 +1,5 @@
 # Intro
-Welcome to the Official Documentation for the Concord Standard APIs (Energia).
+Welcome to the Official Documentation for the Redux Standard APIs (Energia).
 
 ## APIs Documented
 
@@ -19,8 +19,8 @@ Welcome to the Official Documentation for the Concord Standard APIs (Energia).
 Currently Ekranoplan has not implemented bot creation,
 so for now you will be stuck with having to use so-called "User Bots,"
 
-At the current time, Concords Own hosted Ekranoplan instance allows you to use
+At the current time, Reduxs Own hosted Ekranoplan instance allows you to use
 User Bots in most compacitys
 
 ## Help with Deploying the API or With Routes
-For bug reporting, feature requests or help you can contact us via our [Discord Server](https://discord.gg/JgpM79pH9z) or our [Discussion Repo](https://github.com/concordchat/concord)
+For bug reporting, feature requests or help you can contact us via our [Discord Server](https://discord.gg/JgpM79pH9z) or our [Discussion Repo](https://github.com/reduxapp/concord)

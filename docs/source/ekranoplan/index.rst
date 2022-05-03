@@ -2,7 +2,7 @@ Ekranoplan
 ----------
 
 Ekranoplan, named after the "Caspian Sea Monster" or "Lun-class Ekranoplan," 
-is the Core Backend REST API for Concord.
+is the Core Backend REST API for Redux.
 
 Its been built for high scalablility, large flexibility, and low ping. 
 The Official Implementation is written in python and is an example 
