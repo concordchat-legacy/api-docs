@@ -44,9 +44,9 @@ source_suffix = [".rst", ".md"]
 master_doc = "index"
 
 # General information about the project.
-project = "Redux"
-copyright = str(date.today().year) + ", Redux. All rights reserved."
-author = u"Redux"
+project = "Concord"
+copyright = str(date.today().year) + ", Concord. All rights reserved."
+author = u"Concord"
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -108,7 +108,7 @@ html_theme_options = {
     "hide_banner": "false",
     "github_issues_repository": "concord/energia",
     "github_repository": "concord/energia",
-    "site_description": "Documentation for the Redux Standard",
+    "site_description": "Documentation for the Concord Standard",
     "hide_version_dropdown": ["master"],
     "versions_unstable": UNSTABLE_VERSIONS,
     "versions_deprecated": DEPRECATED_VERSIONS,

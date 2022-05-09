@@ -1,7 +1,7 @@
 Users
 -----
 
-Redux normally gives users its full route set, unlike bots most if not all endpoints are accessible by users, they are Reduxs base entity.
+Concord normally gives users its full route set, unlike bots most if not all endpoints are accessible by users, they are Concords base entity.
 
 .. _User Object:
 

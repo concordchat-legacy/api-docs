@@ -7,10 +7,10 @@
 :hide-post-content:
 
 
-.. title:: Redux Documentation
+.. title:: Concord Documentation
 
 .. hero-box::
-  :title: Welcome to Redux Documentation
+  :title: Welcome to Concord Documentation
   :image: /developers/docs/_static/img/scales.svg
 
   Fast, Flexible, and Scalable Standard for Chatting Platforms.
@@ -22,19 +22,19 @@
   :class: large-6
   :anchor: Learn more
 
-  Redux API Reference
+  Concord API Reference
 
 .. topic-box::
-  :title: Ekranoplan
-  :link: ekranoplan/index.html
+  :title: Resources
+  :link: resources/index.html
   :icon: scylla-icon scylla-icon--integrations
   :class: large-6
   :anchor: Learn more
 
-  Redux REST API Documentation
+  Concord API Resources
 
 .. toctree::
   :hidden:
 
   reference/index
-  ekranoplan/index
+  resources/index

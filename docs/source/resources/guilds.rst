@@ -1,7 +1,7 @@
 Guilds
 ------
 
-Redux Names its Communitys "guilds," Guilds don't have a fixed member limit inside the standard, 
+Concord Names its Communitys "guilds," Guilds don't have a fixed member limit inside the standard, 
 but it is recommended you add it to your implementation.
 
 .. _Guild Object:
@@ -146,7 +146,7 @@ Example:
             "name": "Genshin Impact",
 
             // Optional
-            "description": "A Genshin Impact Redux",
+            "description": "A Genshin Impact Concord",
             "nsfw": false
         }
 
@@ -158,7 +158,7 @@ Example:
             "id": "6427339792089088",
             "owner_id": "8272616840232960",
             "name": "Genshin Impact",
-            "description": "A Genshin Impact Redux",
+            "description": "A Genshin Impact Concord",
             "icon": "",
             "banner": "",
             "vanity_url": "",
@@ -228,7 +228,7 @@ Example:
 
         {
             "name": "Genshin Fan Club",
-            "description": "The best Genshin Fan Club on Redux!",
+            "description": "The best Genshin Fan Club on Concord!",
             "nsfw": false
         }
 
