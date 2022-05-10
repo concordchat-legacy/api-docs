@@ -1,5 +1,11 @@
-# Properly detect languages on GitHub
-*.rst linguist-detectable=true
+# automatically normalize line endings
+* text=auto
 
-# Normalize EOL for all files that Git considers text files
-* text=auto eol=lf
+.git* text
+*.json text
+*.js text
+*.md text linguist-detectable
+*.{yml,yaml} text
+
+*.png binary
+*.{jpeg,jpg} binary
