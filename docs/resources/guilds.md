@@ -152,7 +152,7 @@ Returns the edited [Guild](#RESOURCES_GUILD/guild-structure) object, if successf
 
 Requires the `MANAGE_GUILD` permission.
 
-Accepts the same fields as 
+Accepts the same fields as `POST /guilds`.
 
 
 ## Delete Guild % DELETE /guilds/{guild.id#RESOURCES_GUILD/guild-structure}
