@@ -88,7 +88,6 @@ Guilds represent a isolated collection of Users, Channels and Bots.
 | field     | type                      | description                                       |
 |-----------|---------------------------|---------------------------------------------------|
 | id        | snowflake                 | The User ID of this Member                        |
-| guild_id  | snowflake                 | The Members Guild ID                              |
 | avatar    | ?string                   | The Users Guild Avatar                            |
 | user      | User                      | The underlying user                               |
 | banner    | ?string                   | The Users Guild Banner                            |
