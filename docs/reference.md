@@ -36,7 +36,8 @@ Snowflakes are **always** given as a integer by the API but doesn't need to be t
 
 ## Locales
 
-.. note:: Locales are never used inside the API itself.
+> note
+> Locales are never used inside the API.
 
 | Locale    | Country               |
 |-----------|-----------------------|
